@@ -1,13 +1,18 @@
-from ubs_transactions_csv_parser import AccountExportData, AccountTransaction
 from pathlib import Path
 
-# read test CSV file data
-test_csv = AccountExportData.from_csv(Path("src/tests/test_transactions.csv"))
-assert len(test_csv.transactions) == 3
-print(f"Found {len(test_csv.transactions)} transactions for account number: {test_csv.account_number}")
+from ubs_transactions_csv_parser import AccountExportData
 
-# check if the transactions are unique
-assert len(test_csv.transactions) == len(set(test_csv.transactions))
-print("All transactions are unique.")
 
-# TODO: implement some tests...
+def _load_test_export_data() -> AccountExportData:
+	csv_path = Path(__file__).with_name("test_transactions.csv")
+	return AccountExportData.from_csv(csv_path)
+
+
+def test_parse_transactions_count() -> None:
+	export_data = _load_test_export_data()
+	assert len(export_data.transactions) == 3
+
+
+def test_transactions_are_unique() -> None:
+	export_data = _load_test_export_data()
+	assert len(export_data.transactions) == len(set(export_data.transactions))
