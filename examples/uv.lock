@@ -151,7 +151,7 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=7.2.0" },
     { name = "matplotlib", specifier = ">=3.10.9" },
     { name = "numpy", specifier = ">=2.4.6" },
-    { name = "ubs-transactions-csv-parser", specifier = ">=0.2.2" },
+    { name = "ubs-transactions-csv-parser", specifier = ">=0.2.3" },
 ]
 
 [[package]]
@@ -662,14 +662,14 @@ wheels = [
 
 [[package]]
 name = "ubs-transactions-csv-parser"
-version = "0.2.2"
+version = "0.2.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pycountry" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e2/82/aac761e7446b5e7d12e1f9d7e7826a758b49b1599e6f43baa6fab5612205/ubs_transactions_csv_parser-0.2.2.tar.gz", hash = "sha256:72c43be8617f305e2ba8ce4b9a4f7f8dc98cfc3423b025a1887013d2dbc8d899", size = 6656, upload-time = "2026-05-30T12:20:55.31Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/46/58/34354f830585f7453da3e1ec0e6779f4603d5318d0ddb0065ebe694b9f66/ubs_transactions_csv_parser-0.2.3.tar.gz", hash = "sha256:6d114a36717c46b2108cad093b8fa27dceacbb6c4b3d263937cb609e94a7d422", size = 6613, upload-time = "2026-05-31T12:29:35.971Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/17/d9/7172a16afc11321997e23804f0c2b72163824bc0d662ce3925fedd9ef896/ubs_transactions_csv_parser-0.2.2-py3-none-any.whl", hash = "sha256:27886669276774810ccfec0fe967fff09dc856c905264476f803248e5b411552", size = 8729, upload-time = "2026-05-30T12:20:54.187Z" },
+    { url = "https://files.pythonhosted.org/packages/4e/5d/1e5591981cec3fb2172a7937a810ba9ddcdc55d5be0cc5ba12679e75d2bf/ubs_transactions_csv_parser-0.2.3-py3-none-any.whl", hash = "sha256:c681e2aa8c821c780d71d5e20a080936167c57bc31744fc09b266159796dcfd9", size = 8664, upload-time = "2026-05-31T12:29:34.74Z" },
 ]
 
 [[package]]
