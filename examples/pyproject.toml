@@ -1,0 +1,14 @@
+[project]
+name = "examples"
+version = "0.0.0"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "ubs-transactions-csv-parser>=0.2.2",
+]
